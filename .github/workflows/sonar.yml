@@ -26,7 +26,7 @@ jobs:
       - name: Build and analyze
         run: >
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-          -Dsonar.projectKey=your-project
-          -Dsonar.organization=your-org
+          -Dsonar.projectKey=sample-java-maven-sonar
+          -Dsonar.organization=sonar-brettmiller
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.token=$SONAR_TOKEN
